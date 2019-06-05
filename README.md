@@ -1,2 +1,4 @@
 # GZYYDX_ESXI6
-RESET VM
+reset vm when this vm is power on 
+#vcenter version is 6.0
+
