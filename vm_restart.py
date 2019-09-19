@@ -1,8 +1,8 @@
 #!/usr/bin/evn python
 # -*- encoding:utf-8 -*-
 # function: connect exsi server api  for restart vm
-# date:2019-09-09
-# Arthor:Timbaland
+# date:2019-09-19
+# Author:Timbaland
 import sys
 
 reload(sys)
@@ -200,29 +200,40 @@ if __name__ == '__main__':
             for vmname in p.get_vmname(query_vm):
                 if obj1.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc1', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj2.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc2', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj3.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc3', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj4.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc4', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj5.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc5', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj6.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc6', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj7.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc7', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj8.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc8', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj9.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc9', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj10.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc10', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj11.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc11', 'vc_ip'))
+                    logger.info(u'正在关机%s' % (vmname))
                 if obj12.vmaction(vmname, cf.get('vm_hz', 'vm_hz')) == 0:
                     print 'is not exsit %s' % (cf.get('vc12', 'vc_ip'))
-                logger.info(u'正在关机%s' % (vmname))
+                    logger.info(u'正在关机%s' % (vmname))
                 # time.sleep(10)
         nowdate = datetime.datetime.now().strftime
         logger.info(u'现在时间%s,还未到关机时间%s' % (now_date, cf.get('vm_retime', 'set_retime')))
